@@ -1,0 +1,21 @@
+<svg id="Группа_51" data-name="Группа 51" xmlns="http://www.w3.org/2000/svg" width="39" height="25" viewBox="0 0 39 25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: red;
+        stroke-width: 1px;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fd0303;
+      }
+    </style>
+  </defs>
+  <path id="Эллипс_548" data-name="Эллипс 548" class="cls-1" d="M813.687,1097a19,19,0,1,1,36.626,0H813.687Z" transform="translate(-812.5 -1072.5)"/>
+  <path id="Forma_1_копия_14" data-name="Forma 1 копия 14" class="cls-2" d="M836.213,1079.07h-0.184l-3.934,7.62L828.02,1079l-5.58,13.89H821V1094h7.9v-1.11H827.33l1.568-4.34,3.2,5.45,3.072-5.45,1.567,4.34h-1.567V1094H843v-1.11h-1.358Z" transform="translate(-812.5 -1072.5)"/>
+</svg>

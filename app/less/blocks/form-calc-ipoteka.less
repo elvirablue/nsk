@@ -1,0 +1,191 @@
+.form-calc-ipoteka-wrapper {
+	.container-fluid();
+	padding: 0 1.25rem;
+
+	&--red-bg {
+		.form-calc-ipoteka {
+			position: relative;
+			margin-top: 1rem;
+			background: url("../img/bg-form2-red.jpg") 0 0 no-repeat;
+			background-size: cover;
+			&__tile {
+				position: absolute;
+				color: @color-black;
+				left: 0;
+				top: -3rem;
+				font-weight: bold;				
+			}
+
+			&__subtitle {
+				font-size: 1.6rem;
+				text-transform: uppercase;
+				font-weight: normal;
+			}
+		}
+		
+	}
+}
+
+.form-calc-ipoteka {
+	width: 100%;
+	min-height: 23rem;
+	background: url("../img/bg-form2.jpg") 0 0 no-repeat;
+	background-size: cover;
+	border-radius: 3px;
+	box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.4);
+	color: @color-white;
+	text-align: center;
+	padding: 1rem 2rem;
+
+	&__tile {
+		font-size: 1.6rem;
+		text-transform: uppercase;
+		font-weight: normal;
+	}
+
+	&__subtitle {
+		display: block;
+		margin-bottom: 2rem;
+	}
+
+	&__form {
+		display: inline-block;
+		width: 44%;
+		vertical-align: top;
+	}
+
+	&__row {
+		display: block;
+		text-align: left;
+		padding-bottom: 1.3rem;
+	}
+
+	&__title-param {
+		display: inline-block;
+		vertical-align: bottom;
+		width: 48%;
+		padding-right: 1rem;
+		font-size: 1.25rem;
+		line-height: 1;
+	}
+
+
+	&__result {
+		display: inline-block;
+		width: 50%;
+		vertical-align: top;
+		background-color: #ffffff;
+		border-radius: 3px;
+		padding: 2rem 1rem;
+		margin-left: 1.7rem;
+		color: @color-black;
+		position: relative;		
+		text-align: left;
+
+		
+		.result-title,
+		.result-total,
+		.result-monthly {
+			font-size: 1.25rem;
+			line-height: 2;
+		}
+
+		.result-total,
+		.result-monthly {
+			font-weight: bold;
+		}
+	}
+
+	&__comment {
+		font-size: 0.8rem;
+		line-height: 1.2;
+		color: #919191;
+		margin-top: 1.7rem;
+		padding-top: 0.5rem;
+		border-top: 1px solid #919191;
+	}
+
+	&__result:after {
+		display: inline-block;
+		content: "";
+		background: url("../img/arrow-left-form.svg") 0 50% no-repeat;
+		background-size: cover;
+		width: 1.625rem;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: -1rem;
+	}
+
+	&__comment-mobil {
+		display: none;
+	}
+
+}
+
+@media @tablet-widths {
+	.form-calc-ipoteka__result {
+		.result-title,
+		.result-total,
+		.result-monthly {
+			font-size: 1rem;
+			line-height: 2;
+		}
+	}
+
+	.form-calc-ipoteka__title-param {
+		font-size: 1rem;
+	}
+}
+
+@media @mobil-widths {
+	.form-calc-ipoteka {
+		padding: 1rem;
+	}
+	.form-calc-ipoteka__comment {
+		display: none;
+	}
+
+	.form-calc-ipoteka__form,
+	.form-calc-ipoteka__result {
+		display: block;
+		width: 75vw;
+		margin: 0 auto;
+	}
+
+	.form-calc-ipoteka__result {
+		text-align: center;
+		padding: 1rem;
+		.result-title,
+		.result-total,
+		.result-monthly {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	.form-calc-ipoteka__result:after {
+		display: none;
+	}
+
+	.form-calc-ipoteka__comment-mobil {
+		display: block;
+
+		.ipoteka-comment,
+		.ipoteka-link {
+			display: block;
+			width: 75vw;
+			margin: 0 auto;
+			text-align: left;
+			padding-top: 1rem;
+		}
+
+		.ipoteka-link {
+			color: @color-brightblue;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+	}
+}
+
+

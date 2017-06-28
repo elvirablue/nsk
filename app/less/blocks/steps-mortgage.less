@@ -1,0 +1,98 @@
+.steps-mortgage-wrapper {
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+.steps-mortgage-bg {
+	display: block;
+	width: 115rem;
+	height: 75rem; 
+	position: absolute;
+	z-index: 10;
+	top: -16rem;
+	
+	right: 50%;
+	margin-right: -58rem;
+	background: url("../img/bg-papir-big.png") 0 100% no-repeat;
+	background-size: contain;
+}
+
+.steps-mortgage {
+	.container-fluid();
+	display: block;
+	position: relative;
+	z-index: 100;
+	margin-bottom: 3rem;
+	
+	padding-top: 2rem;
+	background: url("../img/bg-steps.png") 0rem 2rem no-repeat;
+	background-size: 33rem 28rem;
+	
+}
+
+.steps-mortgage-column {
+	display: inline-block;
+	vertical-align: top;
+	width: 25rem;
+	padding: 0 0 0 3.5rem;
+}
+
+.steps-mortgage-column:last-child {
+	width: 30rem;
+	padding-left: 8rem;	
+	margin-right: -8rem;
+	.step-mortgage {
+		padding-bottom: 5.7rem;
+	}
+}
+	
+.step-mortgage {
+	padding-bottom: 3.5rem;
+
+	&__title {
+		color: @color-blue;
+		font-size: 1rem;
+		text-transform: uppercase;
+		font-weight: bold;
+		padding-bottom: 1rem;
+	}
+
+	&__text {
+		padding-left: 1.5rem;
+	}
+}
+
+@media @tablet-widths {
+	.steps-mortgage-bg {
+		display: none;
+	}
+
+	.steps-mortgage {
+		background-image: none;
+		padding-top: 4rem;
+	}
+
+	.steps-mortgage-column {
+		width: 48%;
+		text-align: left;
+	}
+
+	.steps-mortgage-column:last-child {
+		width: 48%;
+		padding-left: 3.5rem;	
+		margin-right: 0;
+		.step-mortgage {
+			padding-bottom: 3.5rem;
+		}
+	}	
+}
+
+@media @mobil-widths {
+	.steps-mortgage-column,
+	.steps-mortgage-column:last-child {
+		width: 80%;
+		padding-left: 0;
+	}
+	 
+}

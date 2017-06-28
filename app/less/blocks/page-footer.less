@@ -1,0 +1,152 @@
+.page-footer-bg {
+	width: 100%;
+	position: relative;
+	z-index: 100;
+	background-color: @color-black;
+	height: 370px;
+	margin-top: -370px;
+}
+
+.page-footer {
+	.container-fluid();
+	.clearfix();
+	height: 370px;
+	padding: 1.7rem 1.25rem;
+
+	&__block-logo-nav {
+		display: inline-block;
+		vertical-align: top;
+		width: 13rem;
+
+		img {
+			width: 80%;
+		}
+	}
+
+	&__subtitle {
+		font-size: 0.8rem;
+		line-height: 1;
+		color: @color-footer-text;
+		padding-top: 0.8rem;
+	}
+
+	&__nav {
+		padding-top: 1rem;
+		ul {
+			list-style: none;
+			li {
+				transition: ease 0.5s;
+				a {
+					color: @color-brightblue;
+					line-height: 1.4rem;
+					transition: ease 0.5s;
+				}
+			}
+
+			li:hover,
+			li.active,
+			li:active {
+				text-decoration: underline;
+				a {font-size: 1.1rem;}
+			}
+		}		
+	}
+
+	&__block-form-contact {
+		display: inline-block;
+		vertical-align: top;
+		width:  ~"calc(100% - 15rem)";
+		max-width: 50rem;
+		padding-top: 0.5rem;
+	}
+
+	&__form {
+		display: inline-block;
+		max-width: 28rem;
+		padding: 1rem;
+		border-radius: 3px;
+		border: 1px solid #000000;
+
+		p {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 0.8rem;
+			line-height: 1.4;
+			width: 40%;
+			color: @color-footer-text;			
+		}
+	}
+
+	&__form-block-btn {
+		display: inline-block;
+		vertical-align: middle;
+		width: 58%;
+	}
+
+	&__contact {
+		display: inline-block;
+		vertical-align: top;
+		float: right;
+		width: 13rem;
+		padding-left: 1rem;
+
+		* {color: @color-footer-text;}
+	}
+
+	&__contact-phone {		
+		span {
+			font-size: 1.4rem;
+		}
+	}
+	
+	&__contact-address {
+		padding-top: 1rem;
+		font-weight: bold;
+	}
+
+	&__address {
+		padding-top: 0.5rem;
+		padding-left: 2rem;
+	}
+
+	&__address-text {
+		font-weight: normal;
+	}
+
+
+	.no-afert {
+		padding-top: 2.5rem;
+		font-size: 0.75rem;
+		line-height: 1.4;
+		color: @color-footer-text;
+	}
+}
+
+
+@media @tablet-widths {
+	.page-footer__block-logo-nav {
+		display: none;
+	}
+
+	.page-footer__block-form-contact {
+		width: 100%;
+	}
+}
+
+@media @mobil-widths  {
+	.page-footer__contact {
+		display: none;
+	}
+
+	.page-footer__form p {
+		display: block;
+		margin: 0 auto 1rem;
+		width: 80%;
+	}
+
+	.page-footer__form-block-btn {
+		display: block;
+		margin: 0 auto;
+		width: 90%;
+	}
+}

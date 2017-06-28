@@ -1,0 +1,131 @@
+.page-header-desktop {
+	.container-left();	
+	padding: 3rem 0 1.5rem;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+
+	&__additional {
+		display: block;
+		position: absolute;
+		top: 0.5rem;
+		left: 0;
+		right: 0;
+		color: @color-black;
+		font-weight: bold;
+	}
+
+	&__block-logo {
+		display: block;
+		width: 22%;
+		min-width: 12rem;	
+		flex-grow:1;
+		flex-basis: 30%;
+		max-width: 14rem;
+		vertical-align: top;			
+		border-right: 1px solid #f5f5f5;
+
+		img {
+			width: 90%;
+			max-width: 11rem;
+		}
+	}
+
+	&__subtitle {
+		font-size: 0.8rem;
+		color: @color-gray;
+		padding-top: 0.5rem;
+	}
+
+	&__block-address {
+		display: inline-block;
+		width: auto;
+		vertical-align: top;
+		text-align: center;
+		
+		
+	}
+
+	&__address {
+		display: inline-block;
+		width: 11rem;
+		padding-left: 2.5rem;
+		vertical-align: top;
+		position: relative;
+		text-align: left;
+		background: url("../img/ico-location.svg") 0.5rem 0 no-repeat;
+		background-size: 1.5rem 1.5rem;
+		padding-bottom: 1.3rem;				
+	}
+
+	
+
+	&__address-title {
+		display: block;
+		width: 100%;
+		font-size: 0.875rem;
+		color: @color-blue;
+		font-weight: bold;
+	}
+
+	&__address-text {
+		font-size: 0.8rem;
+		color: @color-gray;
+		padding-top: 0.5rem;
+	}
+
+	&__address-link {
+		
+		color: @color-orange;
+		font-weight: bold;
+
+		span {
+			border-bottom: 2px dashed @color-orange;
+			cursor: pointer;
+			padding-bottom: 0.1rem;
+		}
+	}
+
+	&__block-end {
+		display: inline-block;
+		min-width: 14rem;	
+		flex-grow:1;
+		flex-basis: 30%;
+		max-width: 15rem;		
+		vertical-align: top;		
+		text-align: right;
+		border-left: 1px solid #f5f5f5;
+		margin-top: -1rem;
+	}
+
+	&__phone {
+		display: inline-block;
+		font-size: 1rem;
+		color: @color-gray;
+		padding-bottom: 1.5rem;
+		padding-left: 2.5rem;
+		background: url("../img/ico-phone.svg") 0.8rem 0.1rem no-repeat;
+		background-size: 1.4rem 1.4rem;
+
+		span {
+			color: @color-blue;
+			font-size: 1.4rem;
+			font-weight: bold;
+		}
+	}
+}
+
+
+
+@media @tablet-widths {
+
+	.page-header-desktop__address {
+		width: auto;		
+	}
+}
+
+@media @mobil-widths {
+	.page-header-desktop {
+		display: none;
+	}
+}

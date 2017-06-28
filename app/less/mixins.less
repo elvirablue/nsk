@@ -1,0 +1,191 @@
+@import "variables.less";
+@import "scaffolding.less";
+/*@import "outlines.less";*/
+@import "blocks/btn.less";
+@import "blocks/input.less";
+@import "blocks/checkbox.less";
+@import "blocks/page-header-desktop.less";
+@import "blocks/page-header-mobil.less";
+@import "blocks/main-nav.less";
+@import "blocks/breadcpamps.less";
+@import "blocks/first-screen.less";
+@import "blocks/form-contact1.less";
+@import "blocks/block-map.less";
+@import "blocks/apartments.less";
+@import "blocks/mp-block-appart.less";
+@import "blocks/form-render.less";
+@import "blocks/form-manual.less";
+@import "blocks/galery.less";
+@import "blocks/page-footer.less";
+@import "blocks/main-doc.less";
+@import "blocks/benefits.less";
+@import "blocks/form-ipoteka.less";
+@import "blocks/mp-news.less";
+@import "blocks/select-apart.less";
+@import "blocks/toggle-appart-type.less";
+@import "blocks/appart-item.less";
+@import "blocks/form-calc-ipoteka.less";
+@import "blocks/apart-info.less";
+@import "blocks/floor-plan.less";
+@import "blocks/main-modal.less";
+@import "blocks/logo-banks.less";
+@import "blocks/steps-mortgage.less";
+@import "blocks/contacts.less";
+
+.hidden {
+	display: none;
+}
+ 
+
+.wrapper-x {
+	overflow: hidden !important;
+	min-height: 100%;
+	box-sizing: border-box;
+	position: relative;
+}
+.wrapper-y {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 0 0 370px;
+	min-height: 100vh;
+}
+
+.clearfix() {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+
+ 
+.container-fluid() {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+
+	@media @tablet-widths {
+		width: 90%;
+	}
+
+	@media @mobil-widths {
+		width: auto;
+		text-align: center;
+		min-width: 320px;
+	}
+
+}
+
+.text-content {
+  width: auto;
+  text-align: center;
+  min-width: 320px;
+}
+@media (min-width: 780px) {
+  .text-content {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;  }
+}
+
+
+
+.text-content,
+.text-content-inner {
+  font-size: 13px;
+  line-height: 1.3;
+  
+  color: #121316;
+  font-style: normal;
+  font-weight: normal;
+  text-align: justify;
+  text-indent: 2em;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.text-content p,
+.text-content-inner p {
+    padding-bottom: 10px;
+}
+
+.text-content h1,
+.text-content-inner h1 {
+  font-family: "AcromMedium", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 200;
+  color: #2b2a28;
+  margin-top: 0;
+}
+.text-content h2,
+.text-content-inner h2 {
+  
+  font-size: 27px;
+  text-transform: none;
+  padding: 20px;
+  padding-left: 0;
+  margin: 0;
+  text-align: left;
+  color: #2b2a28;
+}
+.text-content h3,
+.text-content-inner h3,
+.text-content h4,
+.text-content-inner h4,
+.text-content h5,
+.text-content-inner h5 {
+  margin: 1rem 0;
+  font-size: 22px;
+  text-transform: none;
+  color: #2b2a28;
+}
+.text-content__big-img img,
+.text-content-inner__big-img img {
+  border: 2px solid #b0b3be;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: 3px 8px 11px 0px rgba(183, 186, 199, 0.8);
+          box-shadow: 3px 8px 11px 0px rgba(183, 186, 199, 0.8);
+  display: block;
+  margin: 30px auto;
+  max-width: 80%;
+  width: auto;
+}
+
+.news-wrapper {
+  width: auto;
+  text-align: center;
+  min-width: 320px;
+  padding-bottom: 40px;
+  background: url("../img/bg-section.png") 0 100% no-repeat #ffffff;
+  background-size: 100%;
+}
+@media (min-width: 780px) {
+  .news-wrapper {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+.news-content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.news-content__img-main {
+  display: inline-block;
+  width: auto;
+  float: left;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.news-content .news-data {
+  display: block;
+  margin-top: 1rem;
+  color: #9196aa;
+  font-size: 13px;
+}

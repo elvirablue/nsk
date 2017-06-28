@@ -1,0 +1,47 @@
+.floor-plan-bg {
+	background: url("../img/bg-shadow.jpg") 50% 100% no-repeat;
+	background-size: auto;
+	position: relative;
+	margin-top: -8rem;
+}
+
+.floor-plan {
+	.container-fluid();
+	text-align: center;
+
+	&__title {
+		text-transform: uppercase;
+		margin-bottom: 2rem;
+	}
+
+	&__img {
+		display: block;
+		margin: 0 auto;
+		width: 57rem;
+		height: auto;
+		border: 1px solid @color-black;
+		padding: 0rem;
+		overflow: hidden;
+		
+
+		img {
+			width: 100%;
+		}
+	}	
+}
+
+@media @tablet-widths {
+	.floor-plan-bg {
+		background-image: none;
+		margin-top: 0;
+	}
+
+	.floor-plan {
+		padding: 0 1.25rem;
+	}
+
+	.floor-plan__img {
+		width: 100%;
+		min-width: 17.5rem;
+	}
+}

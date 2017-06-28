@@ -1,0 +1,28 @@
+.mp-news-bg {
+	width: 100%;
+	background: url("../img/bg-news.jpg") 50% 0 no-repeat;
+	background-size: cover;
+	min-height: 43rem;
+}
+
+.mp-news {
+	.container-fluid();
+	padding: 2rem 0;
+
+	&__block-new-prev {
+		padding: 2rem 0 0;
+		text-align: center;
+	}
+
+	&__btn-more {
+		display: block;
+		text-align: center;
+		padding: 1.5rem; 
+	}
+}
+
+@media @mobil-widths {
+	.mp-news__block-new-prev {
+		padding: 2rem 1.25rem 0;
+	}
+}

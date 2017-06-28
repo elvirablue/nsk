@@ -1,0 +1,135 @@
+.mp-block {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	width: 18.5rem;
+	min-height: 32rem;
+	height: auto;
+	margin-left: 0.5rem;
+	margin-bottom: 2rem;
+	border: 1px solid #dcdbdb;
+	border-radius: 3px;
+	background-color: @color-white;
+	box-shadow: 0.2px 2px 13px 0px rgba(0, 0, 0, 0.55);
+	padding: 0.625rem;
+
+
+	&__img-plan {
+		width: 100%;
+		height: 16rem;
+		overflow: hidden;
+		border: 1px solid #008eea;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__title {
+		width: 100%;
+		color: @color-blue;
+		padding: 1.2rem;
+		font-size: 1.1rem;
+		border-bottom: 1px solid #f5f5f5;
+	}
+
+	&__data-table {
+		width: 90%;
+		margin: 1rem auto;
+		font-size: 0.8rem;
+		line-height: 2.3rem;
+		font-weight: bold;
+
+		td:first-child {
+			color: @color-black;
+			text-align: left;
+		}
+
+		td:last-child {
+			font-weight: normal;
+			color: @color-gray;
+			text-align: right;
+		}
+	}
+
+	&__content-new {
+		display: block;
+		text-align: left;
+	}
+
+	&__title-new {
+		color: @color-gray;
+		font-size: 1.45rem;
+		font-weight: normal;		
+		height: 3.5rem;
+		overflow: hidden;
+	}
+
+	&__time-new {
+		color: @color-blue;
+		font-size: 0.95rem;
+		padding-top: 0.5rem;
+	}
+
+	&__text-prev-new {
+		padding-top: 0.5rem;
+		color: @color-gray;
+		font-size: 0.8rem;
+		line-height: 2;
+		height: 5rem;
+		overflow: hidden;
+		text-align: justify;
+		p {
+			font-size: 0.8rem;
+			line-height: 1.4;
+		}
+	}
+
+	&__link {
+		display: block;
+		padding: 1rem 0;
+		color: @color-blue;
+		font-size: 0.8rem;
+	}
+}
+
+.mp-block-border-gray {
+	width: 100%;
+	height: 100%;
+	border: 1px solid #f5f5f5;
+	padding: 0.625rem;
+	padding-bottom: 0;
+}
+
+.mp-block--news {
+	min-height: 26rem;
+	margin: 0 0.5rem 2rem;
+
+	.mp-block__img-plan {
+		padding: 0;
+		height: 10rem;
+		margin-bottom: 2rem;
+		overflow: hidden;
+	}
+
+
+}
+
+@media @tablet-widths {
+	.mp-block:nth-child(3) {
+		display: none;
+	}
+}
+
+@media @mobil-widths {
+	.mp-block {
+		width: 100%;
+		margin-left: 0;
+
+		&__img-plan {
+			display: block;
+			margin: 0 auto;
+			width: 15rem;
+		}
+	}
+}

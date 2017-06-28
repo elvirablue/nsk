@@ -1,0 +1,35 @@
+.main-doc {
+	.container-fluid();
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 3rem;
+	p {
+		display: block;
+		padding-left: 3.5rem;
+		background: url("../img/ico-pdf.png") 0 0 no-repeat;
+		background-size: auto;
+		font-size: 1.1rem;
+		line-height: 3;
+		
+		a.link-black {
+			font-size: 1.1rem;
+			line-height: 2;
+			color: @color-black;
+		}
+
+		
+	}
+}
+
+@media @mobil-widths {
+	.main-doc p {
+		padding-bottom: 2rem;
+		line-height: 1.2rem;
+		text-align: left;
+
+		a.link-black {
+			line-height: 1.1rem;
+			font-size: 0.875rem;
+		}
+	}
+}

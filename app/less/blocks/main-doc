@@ -1,0 +1,6 @@
+.main-doc {
+	.container-fluid();
+	a {
+		font-size: 1.5rem;
+	}
+}

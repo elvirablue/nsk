@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Новосибирская строительная компания</title>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/stylename.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<link rel="stylesheet" href="css/animate.css">
+
+	<!-- jQuery -->
+	<script src="js/jquery-1.12.4.js"></script>
+
+	
+</head>
+<body>
+
+<div class="wrapper-x">
+<div class="wrapper-y">
+	<header class="page-header-desktop">
+		<div class="page-header-desktop__block-logo">
+			<img src="img/logo.jpg" alt="НСК">
+			<p class="page-header-desktop__subtitle">Более 99 лет строим<br>недвижимость в Новосибирске</p>
+		</div>
+		<div class="page-header-desktop__block-address">
+			<p class="page-header-desktop__address">
+				<span class="page-header-desktop__address-title">Офис продаж:</span>
+				<span class="page-header-desktop__address-text">г Новосибирск ул.&nbsp;Дунаевского,&nbsp;3</span>
+			</p>
+			<p class="page-header-desktop__address">
+				<span class="page-header-desktop__address-title">Адрес объекта:</span>
+				<span class="page-header-desktop__address-text">г Новосибирск ул.&nbsp;Дунаевского,&nbsp;3</span>
+			</p>
+			<p class="page-header-desktop__address-link">>>> <span>Свяжитесь с нами</span> <<<</p>
+			
+		</div>
+		<div class="page-header-desktop__block-end">
+			<p class="page-header-desktop__phone">
+				+7 (383) <span> 274-23-43</span>				
+			</p>
+			<button type="button" class="btn-blue btn-blue--header">Запись на экскурсию</button>
+		</div>
+		
+	</header>
+	<header class="page-header-mobil">
+		<p class="page-header-mobil__phone">
+				+7 (383) <span> 274-23-43</span>				
+		</p>
+		<a href="index.html" class="page-header-mobil__logo"></a>
+		
+	</header>
+	
+	<div class="main-nav-block main-nav--closed main-nav--nojs">
+		<button class="main-nav__toggle" type="button">Открыть меню</button>
+	
+		<nav class="main-nav">			
+			<div class="main-nav__wrapper">
+				<ul>
+					<li ><a href="index.html">Главная</a></li>
+					<li class="active"><a href="">Квартиры</a></li>
+					<li><a href="mortgage.html">Ипотека</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="about.html">Документы</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+<!-- *********************** БЛОК ФОРМЫ ПОДБОРА КВАРТИРЫ ********************************- -->	
+	<div class="select-apart">
+	<div class="select-apart-bg">	</div>
+		<h2 class="select-apart__title">Подбор квартир</h2>
+		<div class="select-apart__form-wrapper">
+			<form class="form-select-apart" action="">
+				<div class="form-select-apart__row">
+					<p class="form-select-apart__title-param">Количество комнат:</p>
+					<div class="select_checkbox form-select-apart__block-param">
+						<div class="checkbox">
+							<div class="ch_wrapper">
+								<input id="check0" type="checkbox" name="check" value="check0">
+								<label for="check0">Ст.</label>
+							</div>
+							<div class="ch_wrapper">
+								<input id="check1" type="checkbox" name="check" value="check1">
+								<label for="check1">1</label>
+							</div>	
+							<div class="ch_wrapper">
+								<input id="check2" type="checkbox" name="check" value="check2">
+								<label for="check2">2</label>
+							</div>
+							<div class="ch_wrapper">
+								<input id="check3" type="checkbox" name="check" value="check3">
+								<label for="check3">2 Ст.</label>
+							</div>							
+						</div>
+					</div>
+				</div>
+				<div class="form-select-apart__row">
+					<p class="form-select-apart__title-param">Стоимость, тыс. руб.:</p>
+					<p class="form-select-apart__block-param">
+						<span>От</span> <input class="data-input data-input--select-appart" type="text" name="min-price">
+						<span>До</span> <input class="data-input data-input--select-appart" type="text" name="max-price">
+					</p>
+				</div>
+				<div class="form-select-apart__row">
+					<p class="form-select-apart__title-param">Площадь, кв. м.:</p>
+					<p class="form-select-apart__block-param">
+						<span>От</span> <input class="data-input data-input--select-appart" type="text" name="min-price">
+						<span>До</span> <input class="data-input data-input--select-appart" type="text" name="max-price">
+					</p>
+				</div>
+				<div class="form-select-apart__row">
+					<p class="form-select-apart__title-param">Этаж:</p>
+					<p class="form-select-apart__block-param">
+						<span>От</span> <input class="data-input data-input--select-appart" type="text" name="min-price">
+						<span>До</span> <input class="data-input data-input--select-appart" type="text" name="max-price">
+					</p>
+				</div>
+				<div class="form-select-apart__row">
+					<button class="btn-yellow btn-yellow--form-select-apart" type="submit"> Подобрать квартиру </button>
+				</div>
+
+			</form>
+			<div class="form-select-manual-desktop">
+				<p>СКАЧАЙТЕ РУКОВОДСТВО<br> от Новосибирской<br> Строительной Компании - <br>как правильно купить <br>квартиру в Новосибирске</p>
+				<button class="btn-blue btn-blue--manual">Скачать руководство</button>
+			</div>
+			<div class="form-select-manual-mobil">
+				<p><a class="link" href="#" target="_blank">СКАЧАЙТЕ РУКОВОДСТВО</a> от Новосибирской Строительной Компании - как правильно купить квартиру в Новосибирске</p>
+			</div>
+		</div>		
+	</div>
+	
+<!-- *********************** БЛОК ПЕРЕКЛЮЧАТЕЛЕЙ ********************************- -->
+	<div class="toggle-appart-type">
+		<ul>
+			<li class="active">Все квартиры</li>
+			<li>Студии</li>
+			<li>1-комнатные</li>
+			<li>2-комнатные</li>
+			<li>3-комнатные</li>
+		</ul>		
+	</div>
+
+<!-- *********************** БЛОК ДЛЯ ОТОБРАЖЕНЯ СПИСКА КВАРТИР ********************************- -->
+	<div class="appart-list-wrapper">
+		<!--********************************-->
+		<div class="appart-item">
+		<div class="appart-item-bg-gradient"></div>
+			<div class="appart-item__description">
+				<div class="appart-item__img block-img-plan">
+					<a href="apart.html">
+					<img src="img/plan/one/1.jpg" alt="">
+					</a>
+				</div>
+
+				<div class="appart-item__description-data-wrapper">					
+				<h4 class="appart-item__description-title">Квартира-студия - 27,99 кв.м.</h4>
+				<table class="appart-item__description-data table-description">
+					<tbody>
+						<tr>
+							<td>Площадь общая</td>
+							<td class="line-dotted"></td>
+							<td><b>27,99 кв.м</b></td>
+						</tr>
+						<tr>
+							<td>Площадь кухни</td>
+							<td class="line-dotted"></td>
+							<td><b>9,0 кв.м</b></td>
+						</tr>
+						<tr>
+							<td>Площадь лоджии</td>
+							<td class="line-dotted"></td>
+							<td><b>4,42 кв.м</b></td>
+						</tr> 
+					</tbody>
+				</table>
+				</div>
+				<div class="appart-item__form-phone-bg">	
+					<form class="appart-item__form-phone" action="">
+						<p>Введите Ваш телефон<br>и узнайте все подробности<br>про эту квартиру</p>
+						<input type="tel" name="user-phone" class="user-input user-input--form-appart required" placeholder="Ваш телефон">
+						<button type="submit" class="btn-yellow btn-yellow--form-appart">Связаться со специалистом</button>
+					</form>
+				</div>
+			</div>
+			<table class="appart-item__table-list">
+				<tbody>
+					<tr class="table-title">
+						<td class="table-td-arrow"><span>Квартира</span></td>
+						<td class="table-td-arrow"><span>Этаж</span></td>
+						<td class="table-td-arrow"><span>Стоимость, руб.</span></td>
+						<td class="table-td-arrow"><span>Статус</span></td>
+					</tr>
+
+					<tr class="table-row">
+						<td><a href="apart.html" style="width: 100%; display: inline-block;">51</a></td>
+						<td>1</td>
+						<td>1 356 000</td>
+						<td>В продаже</td>
+					</tr>
+					<tr class="table-row">
+						<td>51</td>
+						<td>1</td>
+						<td>1 356 000</td>
+						<td>В продаже</td>
+					</tr>
+					<tr class="table-row">
+						<td>51</td>
+						<td>1</td>
+						<td>1 356 000</td>
+						<td>В продаже</td>
+					</tr>
+				</tbody>					
+			</table>
+		</div>	
+		
+		<!--********************************-->
+		<!--********************************-->
+		<div class="appart-item">
+		<div class="appart-item-bg-gradient"></div>
+			<div class="appart-item__description">
+				<div class="appart-item__img block-img-plan" >
+					<img src="img/plan/one/1.jpg" alt="">
+				</div>
+
+				<div class="appart-item__description-data-wrapper">					
+				<h4 class="appart-item__description-title">Квартира-студия - 27,99 кв.м.</h4>
+				<table class="appart-item__description-data table-description">
+					<tbody>
+						<tr>
+							<td>Площадь общая</td>
+							<td class="line-dotted"></td>
+							<td>27,99 кв.м</td>
+						</tr>
+						<tr>
+							<td>Площадь кухни</td>
+							<td class="line-dotted"></td>
+							<td>9,0 кв.м</td>
+						</tr>
+						<tr>
+							<td>Площадь лоджии</td>
+							<td class="line-dotted"></td>
+							<td>4,42 кв.м</td>
+						</tr> 
+					</tbody>
+				</table>
+				</div>
+				<div class="appart-item__form-phone-bg">	
+					<form class="appart-item__form-phone" action="">
+						<p>Введите Ваш телефон<br>и узнайте все подробности<br>про эту квартиру</p>
+						<input type="tel" name="user-phone" class="user-input user-input--form-appart required" placeholder="Ваш телефон">
+						<button type="submit" class="btn-yellow btn-yellow--form-appart">Связаться со специалистом</button>
+					</form>
+				</div>
+			</div>
+			<table class="appart-item__table-list">
+				<tbody>
+					<tr class="table-title">
+						<td class="table-td-arrow"><span>Квартира</span></td>
+						<td class="table-td-arrow"><span>Этаж</span></td>
+						<td class="table-td-arrow"><span>Стоимость, руб.</span></td>
+						<td class="table-td-arrow"><span>Статус</span></td>
+					</tr>
+					<tr class="table-row">
+						<td>51</td>
+						<td>1</td>
+						<td>1 356 000</td>
+						<td>В продаже</td>
+					</tr>
+					<tr class="table-row">
+						<td>51</td>
+						<td>1</td>
+						<td>1 356 000</td>
+						<td>В продаже</td>
+					</tr>
+					<tr class="table-row">
+						<td>51</td>
+						<td>1</td>
+						<td>1 356 000</td>
+						<td>В продаже</td>
+					</tr>
+				</tbody>					
+			</table>
+		</div>	
+		
+		<!--********************************-->
+	</div>
+
+	<div class="separator"></div>
+<!-- *********************** БЛОК ИППОТЕЧНОГО КАЛЬКУЛЯТОРА ********************************- -->
+	<div class="form-calc-ipoteka-wrapper">
+		<!-- начало блока для чанга -->
+		<div class="form-calc-ipoteka">
+			<h4 class="form-calc-ipoteka__tile">Ипотека</h4>
+			<span class="form-calc-ipoteka__subtitle">предварительный расчет</span>		
+
+			<form class="form-calc-ipoteka__form">
+				<div class="form-calc-ipoteka__row">
+					<span class="form-calc-ipoteka__title-param">Стоимость:</span>
+					<input class="data-input data-input--calc-ipoteka" type="text" name="price-all">						
+				</div>
+				<div class="form-calc-ipoteka__row">
+					<span class="form-calc-ipoteka__title-param">Первоначальный взнос:</span>
+					<input class="data-input data-input--calc-ipoteka" type="text" name="price-all">						
+				</div>
+				<div class="form-calc-ipoteka__row">
+					<span class="form-calc-ipoteka__title-param">Срок кредитования:</span>
+					<input class="data-input data-input--calc-ipoteka" type="text" name="price-all">						
+				</div>
+				<div class="form-calc-ipoteka__row">
+					<span class="form-calc-ipoteka__title-param">Процентная ставка:</span>
+					<input class="data-input data-input--calc-ipoteka" disabled type="text" name="price-all" value="10.9%">							
+				</div>			   
+			</form>
+	
+			<div class="form-calc-ipoteka__result">
+				<p class="result-title">Сумма займа - <span class="result-total">99 000 руб.</span></p>
+				<p class="result-title">Ежемесячный платеж - от <span class="result-monthly">10 000 руб.</span></p>
+				<p class="form-calc-ipoteka__comment">* Конкретные условия предоставления ипотеки зависят от банка. Для получения подробной информации обратитесь к консультанту</p>
+			</div>
+			<div class="form-calc-ipoteka__comment-mobil">
+				<p class="ipoteka-comment">* Конкретные условия предоставления ипотеки зависят от банка. Для получения подробной информации обратитесь к консультанту
+				<a href="#" class="ipoteka-link">Подробнее в разделе “Ипотека”</a></p>
+			</div>
+		</div>	
+		<!-- конец блока для чанга -->	
+	</div>
+
+	<div class="separator"></div>
+
+<!-- *************************** БЛОК формы СКАЧАЙТЕ РУКОВОДСТВО ***************************************- -->
+	<div class="form-manual">
+		<div class="form-manual-mobil">
+		
+		</div>
+		<div class="form-manual__title">
+			<h2>Скачайте подробное руководство</h2>
+			<span>от Новосибирской Строительной Компании</span>
+		</div>
+		<p class="form-manual__subtitle-mobil">"5 правил, которые надо соблюдать при  покупке квартиры в Новосибирске"</p>
+		<div class="form-manual__form-bg">		
+			<form action="" class="form-manual__form">
+				<p>Оставьте Ваши контактные данные <span class="color-red">и руководство придет Вам на почту  в течение 2 минут</span> </p>
+				<input type="text" name="user-name" class="user-input user-input--form2 required" placeholder="Ваше имя">
+				<input type="tel" name="user-phone" class="user-input user-input--form2 required" placeholder="Ваш телефон">
+				<button class="btn-yellow btn-yellow--form-manual">Скачать руководство</button>
+			</form>
+
+			<p class="form-manual__subtitle">"5 правил, которые надо<br>соблюдать при  покупке<br>квартиры в Новосибирске"</p>
+		</div>
+	</div>
+
+	
+
+	<div class="separator"></div>
+
+</div>
+<!-- *************************** БЛОК ПОДВАЛ***************************************- -->
+	<footer  class="page-footer-bg">
+		<div class="page-footer">
+			<div class="page-footer__block-logo-nav">
+
+				<div class="page-footer__block-logo">
+					<img src="img/logo-white.png" alt="НСК">
+					<p class="page-footer__subtitle">Более 99 лет строим<br>недвижимость в Новосибирске</p>
+				</div>
+
+				<nav class="page-footer__nav">
+					<ul>
+						<li ><a href="index.html">Главная</a></li>
+						<li class="active"><a href="">Квартиры</a></li>
+						<li><a href="mortgage.html">Ипотека</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="about.html">Документы</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+
+			</div>
+			<div class="page-footer__block-form-contact">
+				<form class="page-footer__form" action="">
+					<p>Получайте новости  и полезные статьи  от Новосибирской строительной компании</p>
+					<div class="page-footer__form-block-btn">
+						<input type="text" name="user-name" class="user-input user-input--form-footer color-footer required" placeholder="Ваше имя">
+						<button type="submit" class="btn-yellow btn-yellow--form-footer">Подписаться на рассылку</button>
+					</div>
+				</form>
+				<div class="page-footer__contact">
+					<p class="page-footer__contact-phone">+7 (383) <span> 274-23-43</span></p>
+					<div class="page-footer__contact-address">
+						<p>г. Новосибирск</p>
+						<p class="page-footer__address">
+							<span class="footer__address-title">Адрес объекта:</span>
+							<span class="page-footer__address-text">ул.&nbsp;Дунаевского,&nbsp;3<span>
+						</p>
+						<p class="page-footer__address">
+							<span class="page-footer__address-title">Офис продаж:</span>
+							<span class="page-footer__address-text">ул.&nbsp;Дунаевского,&nbsp;3<span>
+						</p>
+						
+					</div>
+				</div>
+				<p class="no-afert">Предложение не является офертой. Наличие квартир, помещений и актуальные цены уточняйте в отделах продаж.</p>
+			</div>
+			
+		</div>
+		
+	</footer>
+<!-- ************** БЛОК ПРИЛИПАЮЩАЯ НАВИГАЦИЯ ПРИ СКРОЛЛЕ ******************- -->
+	<div class="main-nav-scroll">
+		<div class="main-nav-block main-nav--closed main-nav--nojs">
+				<button class="main-nav__toggle" type="button">Открыть меню</button>
+			
+				<nav class="main-nav">			
+					<div class="main-nav__wrapper">
+						<ul>
+							<li ><a href="index.html">Главная</a></li>
+							<li class="active"><a href="">Квартиры</a></li>
+							<li><a href="mortgage.html">Ипотека</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="about.html">Документы</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+	</div>
+
+</div>
+
+<script src="js/menu.js"> </script>	
+</body>
+</html>

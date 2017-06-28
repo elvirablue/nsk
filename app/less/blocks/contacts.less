@@ -1,0 +1,51 @@
+.contacts {
+	.container-fluid();
+
+	.contacts__map {
+		display: inline-block;
+	    width: 55%;
+	    vertical-align: top;
+	    height: 415px;
+   		margin: 0 auto 25px;
+	}	
+
+	.contacts__info {
+    display: inline-block;
+    width: 40%;
+    height: 415px;
+    max-width: 300px;
+    vertical-align: top;
+    margin-left: 4%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 1.25rem;
+    h2 {
+    	text-align: left;
+    	padding: 0;
+    	padding-bottom: 2rem;
+    }
+  }
+
+}
+
+@media @mobil-widths {
+	.contacts {
+		.contacts__map {
+		  display: block;	  
+		  width: 80vw;	 
+		  overflow: hidden;
+		}
+		.contacts__info {
+		  display: block;	 
+		  width: 80vw;	  
+		  padding: 0px 3%;
+		 text-align: center;
+		h2 {
+    		text-align: center
+    	}
+		  
+		  
+		}	
+	}
+	
+}

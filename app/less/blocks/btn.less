@@ -1,0 +1,186 @@
+.btn-blue,
+.btn-orange,
+.btn-yellow {
+	display: inline-block;
+	border-radius: 3px;
+	box-shadow: 0.2px 2px 3px 0px rgba(170, 170, 171, 0.8);
+	outline: none;
+	text-decoration: none;
+	color: @color-white;
+	font-size: 0.95rem;
+	line-height: 1.2;
+	text-align: center;
+	min-width: 12rem;
+	width: auto;
+	min-height: 2.5rem;
+	cursor: pointer;
+	padding:10px 20px;
+	border: none;
+}
+
+.btn-blue { 
+  background-image: linear-gradient(to top, rgb(0,16,55) 0%, rgb(0,25,77) 9%, rgb(0,33,99) 12%, rgb(0,55,136) 54%, rgb(0,76,172) 100%);
+}
+
+.btn-blue:hover,
+.btn-blue:active,
+.btn-blue.active {
+	box-shadow: inset 0px 4px 17px 3px rgba(0, 0, 0, 0.5), 0.2px 2px 3px 0px rgba(170, 170, 171, 0.8);
+}
+
+.btn-blue--header {
+	max-width: 200px;
+	width: 80%;
+}
+
+.btn-blue--manual {
+	position: absolute;
+	bottom: 2rem;
+	right: 50%;
+	margin-right: -6.5rem;
+	width: 13rem;
+	box-shadow: 0px 3px 1px 0px rgba(50, 50, 50, 0.5);
+}
+
+.btn-blue--manual:hover,
+.btn-blue--manual:active,
+.btn-blue--manual.active {
+	box-shadow: inset 0px 4px 17px 3px rgba(0, 0, 0, 0.5), 0px 3px 1px 0px rgba(50, 50, 50, 0.5);
+}
+
+.btn-orange {	
+	background-image: linear-gradient(to top, rgb(108,59,0) 0%, rgb(168,82,0) 9%, rgb(227,104,0) 12%, rgb(241,131,0) 54%, rgb(255,157,0) 100%);
+}
+
+.btn-orange:hover,
+.btn-orange:active,
+.btn-orange.active {
+	box-shadow: inset 0px 3px 5px 1px rgba(0, 0, 0, 0.5), 0.2px 2px 3px 0px rgba(170, 170, 171, 0.8);
+}
+
+.btn-orange--form1 {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 18rem;
+	width: 30%;
+}
+
+
+.btn-yellow {
+	color: @color-black;
+	border: 1px solid rgb(255, 147, 0);
+	background-image: linear-gradient(to top, rgb(255,165,0) 0%, rgb(255,203,0) 100%);
+	box-shadow: inset 0px 0px 4px 1px #ffe900, 0px 3px 1px 0px rgba(229, 228, 228, 0.96);
+}
+
+.btn-yellow:hover,
+.btn-yellow:active,
+.btn-yellow.active {
+	background-image: linear-gradient(to bottom, rgb(255,165,0) 0%, rgb(255,203,0) 100%);
+}
+
+.btn-yellow--mp-block {
+	width: 90%;
+	max-width: 15rem;
+	display: block;
+	margin: 0 auto;
+}
+
+.btn-yellow--form-render,
+.btn-yellow--form-select-apart,
+.btn-yellow--form-footer {
+	box-shadow: inset 0px 0px 4px 1px #ffe900, 0px 3px 1px 0px rgba(50, 50, 50, 0.5);
+}
+
+.btn-yellow--form-select-apart {
+	display: inline-block;
+	width: 13rem;
+}
+
+.btn-yellow--form-ipoteka {
+	width: 12rem;
+	display: block;
+}
+
+.btn-yellow--form-manual {
+	width: 12rem;
+	margin: 0.5rem auto;
+}
+
+.btn-yellow--mp-news {
+	width: 13rem;
+}
+
+.btn-yellow--apart-info {
+	width: 15rem;
+	display: block;
+	margin: 1.2rem auto;
+	padding-left: 3rem;
+		
+}
+
+.btn-yellow--apart-info.ico-booking {
+	background: url("../img/ico-ok.svg") 0.7rem 0.45rem no-repeat, linear-gradient(to top, rgb(255,165,0) 0%, rgb(255,203,0) 100%);
+	background-size: 1.5rem 1.5rem, auto;
+}
+
+.btn-yellow--apart-info.ico-booking:hover,
+.btn-yellow--apart-info.ico-booking:active,
+.btn-yellow--apart-info.ico-booking.active {
+	background-image: url("../img/ico-ok.svg"), linear-gradient(to bottom, rgb(255,165,0) 0%, rgb(255,203,0) 100%);
+}
+
+.btn-yellow--apart-info.ico-download {
+	background: url("../img/ico-download.svg") 0.7rem 0.45rem no-repeat, linear-gradient(to top, rgb(255,165,0) 0%, rgb(255,203,0) 100%);
+	background-size: 1.8rem 1.5rem, auto;
+}
+
+.btn-yellow--apart-info.ico-download:hover,
+.btn-yellow--apart-info.ico-download:active,
+.btn-yellow--apart-info.ico-download.active {
+	background-image: url("../img/ico-download.svg"), linear-gradient(to bottom, rgb(255,165,0) 0%, rgb(255,203,0) 100%);
+}
+
+.btn-yellow--apart-info.ico-mail {
+	background: url("../img/ico-mail.svg") 0.7rem 0.45rem no-repeat, linear-gradient(to top, rgb(255,165,0) 0%, rgb(255,203,0) 100%);
+	background-size: 1.8rem 1.5rem, auto;
+}
+
+.btn-yellow--apart-info.ico-mail:hover,
+.btn-yellow--apart-info.ico-mail:active,
+.btn-yellow--apart-info.ico-mail.active {
+	background-image: url("../img/ico-mail.svg"), linear-gradient(to bottom, rgb(255,165,0) 0%, rgb(255,203,0) 100%);
+}
+
+.btn-yellow--form-footer {
+	display: inline-block;
+	min-width: 13rem;
+	width: 100%;
+	margin: 0.5rem;
+	font-size: 0.85rem;
+}
+
+.btn-yellow--block-modal {
+	display: block;
+	max-width: 16rem;
+	width: 70%;
+	margin: 0.5rem auto 2rem;
+}
+
+.btn-yellow--form-modal {
+	display: block;	
+	width: 16rem;
+	margin: 2rem auto 2rem;
+}
+
+@media @mobil-widths {
+	.btn-yellow--form-footer {
+		display: block;
+		margin: 0.5rem auto;
+	}
+
+	.btn-orange--form1 {
+		width: 90%;
+	}
+}
+

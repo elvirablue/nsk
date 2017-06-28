@@ -1,0 +1,221 @@
+.appart-item {
+	
+	width: 100%;
+	min-height: 10rem;
+	overflow: hidden;
+	position: relative;
+	z-index: 9;
+	margin-top: -3px;
+	padding-bottom: 3rem;
+
+
+	.appart-item-bg-gradient {
+		position: absolute;
+		top: -5rem;
+		left: 50%;
+		margin-left: -50%;
+		width: 100%;
+		height: 130%;
+	}
+
+	&__description {
+		.container-fluid();
+		.clearfix();
+		display: block;
+		position: relative;
+		padding: 4.5rem 1.25rem 3.5rem;
+	}
+
+	&__description-data-wrapper {
+		display: inline-block;
+		vertical-align: top;
+		float: left;
+		width: 19rem;
+	}
+
+	&__description-title {
+		display: block;
+		padding-top: 4.5rem;
+		font-size: 1.3rem;
+		color: @color-blue;
+		font-weight: bold;
+
+	}
+
+	&__description-data {
+		.line-dotted {
+			width: 5rem;
+		}
+	}
+
+	&__img {
+		width: 16.25rem;
+		height: 17.125rem;
+		display: inline-block;
+		vertical-align: top;
+		float: left;		
+		margin-right: 2rem;		
+	}
+
+	&__form-phone-bg {
+		display: inline-block;
+		vertical-align: top;
+		float: right;
+		width: 19rem;
+		height: 17.5rem;
+		text-align: center;
+		padding: 2.2rem 1.2rem 1.5rem 3rem;
+	}
+
+	&__form-phone {
+		
+		
+	}
+
+	&__table-list {
+		.container-fluid();
+		position: relative;
+		padding: 0 1.25rem;
+		text-align: left;
+
+		td {
+			padding-left: 1rem;
+
+			a {
+				color: @color-black;
+			}
+		}
+
+		.table-title {
+			height: 2.5rem;
+			background-color: #d1d1d1;
+			font-weight: bold;
+
+			span {
+				cursor: pointer;
+			}
+		}
+
+		.table-row {
+			height: 2.5rem;			
+		}
+
+		.table-row:hover td {
+			background-color: rgba(156,200,222,0.5);
+			cursor: pointer;
+		}
+	}	
+	
+}
+
+.table-td-arrow span:after {
+	content: "▼";
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 0.5rem;
+	cursor: pointer;
+}
+
+.appart-item:nth-child(even) {
+	background:  url("../img/bg-bricks-white.jpg") 0 0 repeat;
+	.appart-item-bg-gradient {
+		background: radial-gradient(ellipse rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0.5));
+	}
+	.appart-item__form-phone-bg {
+		background: url("../img/bg-block-arrow-gray.svg") 0 0 no-repeat;
+		background-size: cover;
+	}
+
+	.table-row {
+		border-bottom: 2px solid #e8e8e8;
+	}
+
+}
+
+.appart-item:nth-child(odd) {
+	background: url("../img/bg-bricks-gray.jpg") 0 0 repeat;
+	.appart-item-bg-gradient {
+		background: radial-gradient(ellipse rgba(232, 232, 232, 1) 30%, rgba(232, 232, 232, 0.5) );
+	}
+	.appart-item__form-phone-bg {
+		background: url("../img/bg-block-arrow-white.svg") 0 0 no-repeat;
+		background-size: cover;
+	}
+	.table-row {
+		border-bottom: 2px solid #ffffff;
+	}
+}
+
+
+@media @tablet-widths {
+	.appart-item {
+		&__form-phone-bg {
+			display: inline-block;
+			margin-top: 2rem;
+			margin-left: -2rem;
+			float: none;			
+		}
+	}
+
+	.appart-item__description-title {
+		padding-top: 0;
+	}
+
+	.appart-item:nth-child(odd),
+	.appart-item:nth-child(even) {
+		.appart-item__form-phone-bg {
+			background: none;
+			margin-top: 0;
+			height: 15rem;
+		}
+	}
+	
+}
+
+@media @mobil-widths {
+	.appart-item {
+		position: relative;
+		&__img {
+			display: block;
+			float: none;
+			margin: 8rem auto 0;
+		}
+		
+		&__description-data-wrapper {
+			position: absolute;
+			top: 1.5rem;
+		}
+	}
+
+	.appart-item__description {
+		padding-bottom: 0;
+	}
+
+	.appart-item:nth-child(odd),
+	.appart-item:nth-child(even) {
+		.appart-item__form-phone-bg {
+			background: none;
+			margin-top: 0;
+			height: 15rem;
+		}
+	}
+	
+	.appart-item__table-list td:nth-child(4) {
+		display: none;
+	}
+
+	.appart-item:nth-child(odd) {
+		.table-row {
+			 background-color: #efefef;
+		}
+	}
+
+	.appart-item:nth-child(even) {
+		.table-row {
+			 background-color: #ffffff;
+		}
+	}
+
+	
+
+}

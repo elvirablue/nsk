@@ -1,0 +1,156 @@
+.benefits {
+	background-color: #30322e;
+	padding: 3rem 0;
+
+
+	&__title {
+		color: @color-white;
+		font-weight: normal;
+
+	}
+
+	&__list {
+		.container-fluid();
+		text-align: center;
+		list-style: none;
+		position: relative;
+
+	}
+
+	&__item {
+		display: inline-block;
+		vertical-align: top;
+		width: 17%;
+		position: relative;
+		margin-right: 1rem;
+		color: #9d9d9d;
+		padding-bottom: 3rem;
+		border-top: 1px solid #222222;
+		
+		
+		span {
+			display: block;
+			width: 90%;
+			padding-top: 1rem;
+			
+		}
+		
+		span:before {
+			content: "";
+			display: block;
+			width: 70%;
+			margin: 0 auto 1rem;
+			border-top: 1px solid #222222;
+		}
+
+	}
+	
+
+	&__item:nth-child(1),
+	&__item:nth-child(2),
+	&__item:nth-child(3),
+	&__item:nth-child(4),
+	&__item:nth-child(5) {
+		border-top: none;
+	}
+
+	&__item:after {
+		display: inline-block;
+		content: "";
+		position: absolute;
+		top: 1rem;
+		bottom: 1rem;
+		right: -1rem;
+		height: 11rem;
+		border-right: 1px solid #222222;
+		margin-right: 0.5rem;
+	}
+
+	&__item:nth-child(5n):after {
+		border-right: none;
+	}
+}
+
+.icon-benefit {
+	display: block;
+	margin: 1rem  auto 0;
+	width: 4rem;
+	height: 4rem;
+	background: url("../img/sprite-benefits.svg") no-repeat;
+	background-size: auto;
+}
+
+.benefits__item:nth-child(1) .icon-benefit{
+		background-position: -1px -1px;
+	}
+
+.benefits__item:nth-child(1) .icon-benefit{
+		background-position: -1px -1px;
+	}
+.benefits__item:nth-child(2) .icon-benefit{
+		background-position: -71px -1px;
+	}
+
+.benefits__item:nth-child(3) .icon-benefit{
+		background-position: -141px -1px;
+	}
+
+.benefits__item:nth-child(4) .icon-benefit{
+		background-position: -211px -1px;
+	}
+
+.benefits__item:nth-child(5) .icon-benefit{
+		background-position: -281px -1px;
+	}
+
+.benefits__item:nth-child(6) .icon-benefit{
+		background-position: -1px -71px;
+	}
+
+.benefits__item:nth-child(7) .icon-benefit{
+		background-position: -71px -71px;
+	}
+.benefits__item:nth-child(8) .icon-benefit{
+		background-position: -141px -71px;
+	}
+
+.benefits__item:nth-child(9) .icon-benefit{
+		background-position: -211px -71px;
+	}
+
+.benefits__item:nth-child(10) .icon-benefit{
+		background-position: -281px -71px;
+	}
+
+@media @mobil-widths {
+	.benefits__item {
+		width: 80vw;
+		padding-bottom: 1rem;
+		
+		span {
+			display: inline-block;
+			vertical-align: middle;
+			
+			width: 70%;
+			min-width: 150px;
+		}
+		span:before {
+			content: none;
+		}
+	}
+
+	.benefits__item:after {
+		content: none;
+	}
+
+	.icon-benefit {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	
+	.benefits__item:nth-child(1n) {
+		border-top: 1px solid #222222;
+	}
+
+
+}

@@ -1,0 +1,197 @@
+.box-modal {    
+	position: relative;
+	background-color: #fff;
+    border: 3px solid #fff;
+	width: 400px;
+	height: 230px;
+	left: 50%;
+	z-index: 10005;	
+	color: #261f20;	
+	text-transform: uppercase;
+	text-align: center;
+	
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+   
+    -webkit-box-shadow: 0 0px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -moz-box-shadow: 0 1px 0px 2px rgba(0, 0, 0, 0.4) inset;
+    -ms-box-shadow: 0 1px 0px 2px rgba(0, 0, 0, 0.4) inset;
+    -o-box-shadow: 0 1px 0px 2px rgba(0, 0, 0, 0.4) inset;
+    /* box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset; */
+    -webkit-transition: opacity .5s, top .5s;
+    -moz-transition: opacity .5s, top .5s;
+    -ms-transition: opacity .5s, top .5s;
+    -o-transition: opacity .5s, top .5s;
+    transition: opacity .5s, top .5s;
+}
+
+.box-modal .frame_blue {
+	margin: 8px;
+	width: 384px;
+	height: 214px;
+}
+
+.box-modal p {	
+	width: 80%;
+	margin: 0px auto;
+	padding-top: 20px;
+	text-transform: none;
+}
+
+.box-modal h3 {
+	padding-top: 50px;
+	padding-bottom: 20px;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.box-modal_close { 
+    position: absolute; 
+    top: 20px;
+	right: 20px;
+	width: 30px;
+	height: 30px;
+	font-size: 0;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	background-color: transparent;
+    
+}
+
+.box-modal_close::before,
+.box-modal_close::after {
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: 2px;
+	width: 30px;
+	height: 2px;
+	background-color: #3f3f3f;
+	border-radius: 1px;
+}
+
+.box-modal_close::before {
+	transform: rotate(45deg);
+}
+
+.box-modal_close::after {
+	transform: rotate(-45deg);
+}
+
+/***********************************************/
+/***********************************************/
+/***********************************************/
+
+.modal {
+	display: none;
+	width: 420px;
+	height: 480px;
+	
+	background-color: #ffffff;
+	background-position: center top;
+	position: fixed;
+	z-index: 10000;
+	left: 50%;
+    top: 50%;
+    margin-left: -210px;
+    margin-top: -240px;
+    
+	color: #261f20;		
+	font-size: 18px;
+	line-height: 22px;	
+	text-align: center;
+	
+	 
+    transition: opacity .5s, top .5s;
+}
+
+.modal .frame_blue {
+	margin: 8px;
+	width: 384px;
+	height: 384px;
+}
+
+.modal h3 {
+	width: 330px;
+	height: auto;
+	margin: 0px auto;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 16px;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #0069c7;
+}
+
+
+
+
+.modal p b {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 500;
+	padding-top: 10px;	
+	width: 330px;
+	height: auto;
+	margin: 0px auto 20px;
+	text-align: center;
+	
+}
+
+.modal_close {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 30px;
+	height: 30px;
+	font-size: 0;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.modal_close::before,
+.modal_close::after {
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: 2px;
+	width: 30px;
+	height: 2px;
+	background-color: #3f3f3f;
+	border-radius: 1px;
+}
+
+.modal_close::before {
+	transform: rotate(45deg);
+}
+
+.modal_close::after {
+	transform: rotate(-45deg);
+}
+
+.form_text_hide {
+	display: none;
+}
+
+
+.show {
+	display: block;
+}
+
+@keyframes shake {
+	0%, 100%				{transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90%	{transform: translateX(-10px);}
+	20%, 40%, 60%, 80%		{transform: translateX(10px);}
+}
+
+.modal_error,
+.user_input.modal_error {
+	animation: shake 0.6s;
+	border-color: #c30f23; /* red*/
+}

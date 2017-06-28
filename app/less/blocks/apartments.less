@@ -1,0 +1,105 @@
+.apartments-bg {
+	width: 100%;
+	height: auto;
+	padding: 2.5rem 0;
+	background: url("../img/bg-plan.jpg") 50% 0 no-repeat;
+	background-size: cover;
+
+}
+
+.appart-list-wrapper {
+	
+}
+
+.apartments {
+	.container-fluid();
+	text-align: center;
+
+
+	&__title {
+		.block-plan-width();		
+		min-height: 5.5rem;		
+		border: 1px solid #004dbc;
+		border-radius: 3px;
+		background-color: #dce6f1;
+
+		h2 {
+			padding: 1rem;
+			padding-bottom: 0.5rem;
+		}
+
+		span {
+			color: @color-blue;
+			font-size: 0.95rem;
+		}
+	}
+}
+
+
+.blue-header {
+	.block-plan-width();
+	min-height: 3.75rem;
+	background: url("../img/bg-head.png") 50% 0 no-repeat;
+	background-size: 100% 100%;
+	border-radius: 3px;
+	text-align: left;
+
+	h3 {
+		color: @color-white;
+		line-height: 3.75rem;
+		text-transform: uppercase;
+		padding-left: 4rem;
+
+		span {
+			text-transform: none;
+			font-size: 1.35rem;
+		}
+	}
+
+}
+
+.blue-header--apartments {
+	margin-top: 2.8rem;
+	margin-bottom: 1rem;
+}
+
+@media @tablet-widths {
+	.blue-header--apartments {
+		min-height: 2.75rem;
+
+		h3 {
+			padding-left: 2.3rem;
+			font-size: 1rem;
+			line-height: 2.75rem;		
+
+			span {
+				font-size: 1rem;
+			}
+		}
+	}
+}
+
+@media @mobil-widths {
+	.apartments {
+		&__block-prev {
+			width: 100%;
+			padding: 0 1.25rem;
+		}
+	}
+	.blue-header--apartments {
+		width: 100%;
+		background-image: linear-gradient(to right, #0045a9 0%, #0057b8 58%, #0069c7 99%);
+		padding: 0.5rem 1.5rem;
+		h3 {
+			font-size: 1.25rem;
+			line-height: 1.4;
+			padding: 0;			
+			height: auto;
+			span {
+				display: inline-block;
+				width: 100%;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,79 @@
+@import "variables.less";
+@import "scaffolding.less";
+/*@import "outlines.less";*/
+@import "blocks/btn.less";
+@import "blocks/input.less";
+@import "blocks/checkbox.less";
+@import "blocks/page-header-desktop.less";
+@import "blocks/page-header-mobil.less";
+@import "blocks/main-nav.less";
+@import "blocks/breadcpamps.less";
+@import "blocks/first-screen.less";
+@import "blocks/form-contact1.less";
+@import "blocks/block-map.less";
+@import "blocks/apartments.less";
+@import "blocks/mp-block-appart.less";
+@import "blocks/form-render.less";
+@import "blocks/form-manual.less";
+@import "blocks/galery.less";
+@import "blocks/page-footer.less";
+@import "blocks/main-doc.less";
+@import "blocks/benefits.less";
+@import "blocks/form-ipoteka.less";
+@import "blocks/mp-news.less";
+@import "blocks/select-apart.less";
+@import "blocks/toggle-appart-type.less";
+@import "blocks/appart-item.less";
+@import "blocks/form-calc-ipoteka.less";
+@import "blocks/apart-info.less";
+@import "blocks/floor-plan.less";
+@import "blocks/main-modal.less";
+@import "blocks/logo-banks.less";
+@import "blocks/steps-mortgage.less";
+
+.hidden {
+	display: none;
+}
+ 
+
+.wrapper-x {
+	overflow: hidden !important;
+	min-height: 100%;
+	box-sizing: border-box;
+	position: relative;
+}
+.wrapper-y {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 0 0 275px;
+	min-height: 100vh;
+}
+
+.clearfix() {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+
+
+.container-fluid() {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+
+	@media @tablet-widths {
+		width: 90%;
+	}
+
+	@media @mobil-widths {
+		width: auto;
+		text-align: center;
+		min-width: 320px;
+	}
+
+}
+

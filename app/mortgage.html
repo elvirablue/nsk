@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Новосибирская строительная компания</title>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/stylename.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/simple.css">	
+
+	<!-- jQuery -->
+	<script src="js/jquery-1.12.4.js"></script>
+	<script src="js/jquery.maskedinput.js"></script>
+
+	<link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">	
+	<script src="js/jquery.arcticmodal-0.3.min.js"></script>
+
+</head>
+<body>
+
+<div class="wrapper-x">
+<div class="wrapper-y">
+	<header class="page-header-desktop">
+		<div class="page-header-desktop__block-logo">
+			<img src="img/logo.jpg" alt="НСК">
+			<p class="page-header-desktop__subtitle">Более 99 лет строим<br>недвижимость в Новосибирске</p>
+		</div>
+		<div class="page-header-desktop__block-address">
+			<p class="page-header-desktop__address">
+				<span class="page-header-desktop__address-title">Офис продаж:</span>
+				<span class="page-header-desktop__address-text">г Новосибирск ул.&nbsp;Дунаевского,&nbsp;3</span>
+			</p>
+			<p class="page-header-desktop__address">
+				<span class="page-header-desktop__address-title">Адрес объекта:</span>
+				<span class="page-header-desktop__address-text">г Новосибирск ул.&nbsp;Дунаевского,&nbsp;3</span>
+			</p>
+			<p class="page-header-desktop__address-link" id="main-modal-btn">>>> <span>Свяжитесь с нами</span> <<<</p>
+			
+		</div>
+		<div class="page-header-desktop__block-end">
+			<p class="page-header-desktop__phone">
+				+7 (383) <span> 274-23-43</span>				
+			</p>
+			<button type="button" class="btn-blue btn-blue--header">Запись на экскурсию</button>
+		</div>
+		
+	</header>
+	<header class="page-header-mobil">
+		<p class="page-header-mobil__phone">
+				+7 (383) <span> 274-23-43</span>				
+		</p>
+		<a href="index.html" class="page-header-mobil__logo"></a>
+		
+	</header>
+	
+	<div class="main-nav-block main-nav--closed main-nav--nojs">
+		<button class="main-nav__toggle" type="button">Открыть меню</button>
+	
+		<nav class="main-nav">			
+			<div class="main-nav__wrapper">
+				<ul>
+					<li class="active"><a href="">Главная</a></li>
+					<li><a href="apartments.html">Квартиры</a></li>
+					<li><a href="#">Ипотека</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="about.html">Документы</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<div class="breadcpamps">
+		<ul>
+			<li ><a href="index.html">Главная</a></li>
+			<li class="active"><a href="">Ипотека</a></li>
+			
+		</ul>
+	</div>
+	<div class="separator"></div>
+
+<!-- *********************** БЛОК ИППОТЕЧНОГО КАЛЬКУЛЯТОРА ********************************- -->
+	<div class="form-calc-ipoteka-wrapper form-calc-ipoteka-wrapper--red-bg"> 
+		<!-- начало блока для чанга -->
+		<div class="form-calc-ipoteka">
+			<h4 class="form-calc-ipoteka__tile">Ипотека</h4>
+			<span class="form-calc-ipoteka__subtitle">предварительный расчет</span>		
+
+			<form class="form-calc-ipoteka__form">
+				<div class="form-calc-ipoteka__row">
+					<span class="form-calc-ipoteka__title-param">Стоимость:</span>
+					<input id="js-total" class="data-input data-input--calc-ipoteka" type="text" name="price-all" value="2 000 000">						
+				</div>
+				<div class="form-calc-ipoteka__row">
+					<span class="form-calc-ipoteka__title-param">Первоначальный взнос:</span>
+					<input id="js-first" class="data-input data-input--calc-ipoteka" type="text" name="price-all" value="10 000">						
+				</div>
+				<div class="form-calc-ipoteka__row">
+					<span class="form-calc-ipoteka__title-param">Срок кредитования:</span>
+					<input id="js-time" class="data-input data-input--calc-ipoteka" type="text" name="price-all" value="15">						
+				</div>
+				<div class="form-calc-ipoteka__row">
+					<span class="form-calc-ipoteka__title-param">Процентная ставка:</span>
+					<input id="js-procent" class="data-input data-input--calc-ipoteka" disabled type="text" name="price-all" value="10.9%">						
+				</div>			   
+			</form>
+	
+			<div class="form-calc-ipoteka__result">
+				<p class="result-title">Сумма займа - <span id="js-total-credit" class="result-total">99 000</span> руб.</p>
+				<p class="result-title">Ежемесячный платеж - от <span id="js-monthly" class="result-monthly">10 000</span> руб.</p>
+				<p class="form-calc-ipoteka__comment">* Конкретные условия предоставления ипотеки зависят от банка. Для получения подробной информации обратитесь к консультанту</p>
+			</div>
+			<div class="form-calc-ipoteka__comment-mobil">
+				<p class="ipoteka-comment">* Конкретные условия предоставления ипотеки зависят от банка. Для получения подробной информации обратитесь к консультанту
+				<a href="#" class="ipoteka-link">Подробнее в разделе “Ипотека”</a></p>
+			</div>
+		</div>
+		<!-- конец блока для чанга -->		
+	</div>
+
+	<div class="separator"></div>
+
+<!-- *************************** БЛОК ЛОГОТИПЫ БАНКОВ ***************************************- -->
+	<div class="logo-banks-bg">
+		<div class="logo-banks">
+			<h4 class="logo-banks__title">банки-партнеры</h4>
+			<div class="logo-banks__img-bg">
+				<div class="logo-banks__img-wrapper">
+					<img src="img/logo-absolyut-bank.png" alt="АбсолютБанк">
+					<img src="img/logo-sberbank.png" alt="СберБанк">
+					<img src="img/logo-open-bank.png" alt="БанкОткрытие"></div>
+			</div>
+		</div>		
+	</div>
+	<div class="separator"></div>
+<!-- *************************** БЛОК форма для заявки на ипотеку ***************************************- -->
+	<div class="form-ipoteka-no-border">
+		<!-- начало влока для чанга -->		
+		<div class="form-ipoteka">
+			<h2 class="form-ipoteka__title">Поможем подобрать <br>самую выгодную ипотечную программу</h2>
+			<span class="form-ipoteka__subtitle">и проконсультируем по ипотеке</span>
+	
+			<div class="form-ipoteka__manager">
+				<img class="form-ipoteka__manager-photo" src="img/manager.jpg" alt="">
+				<p class="form-ipoteka__manager-name">Анна Иванова <span>Ведущий специалист по ипотечному кредитованию</span></p>			
+			</div>
+			<div class="form-ipoteka__text">
+				Оставьте заявку и специалист по ипотечному кредитованию свяжется с вами в течение 15 минут в рабочее время
+			</div>
+			<form action="" class="form-ipoteka__form">
+				<p>Оставьте Ваши<br> контактные данные</p>
+				<input type="text" name="user-name" class="user-input user-input--form-ipoteka required" placeholder="Ваше имя">
+				<input type="tel" name="user-phone" class="user-input user-input--form-ipoteka required" placeholder="Ваш телефон">
+				<button class="btn-yellow btn-yellow--form-ipoteka">Узнать подробнее про ипотеку</button>
+			</form>
+		</div>
+		<!-- конец влока для чанга -->	
+	</div>
+	<div class="separator"></div>
+<!-- *************************** БЛОК ШАГИ ***************************************- -->
+	
+	<div class="steps-mortgage-wrapper">
+	 	<div class="steps-mortgage-bg"></div>
+
+	 	<div class="steps-mortgage"> 		
+			
+	 		<div class="steps-mortgage-column">
+	 			<div class="step-mortgage">
+	 			<h5 class="step-mortgage__title">1 | ВЫБОР КВАРТИРЫ</h5>
+	 				<p class="step-mortgage__text">Выбирайте квартиру, планировку, этаж и бронируйте квартиру онлайн или лично в нашем офисе.</p>
+	 			</div>
+	 			<div class="step-mortgage">
+	 				<h5 class="step-mortgage__title">2 | КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА ПО ИПОТЕКЕ</h5>
+	 				<p class="step-mortgage__text">Наш независимый специалист поможет вам подобрать наиболее выгодные условия кредитования и банк, ответит на 	любые 	вопросы по ипотеке. Закажите звонок консультанта и определитесь с ипотекой уже сегодня.</p>
+	 				<a href="#" class="link-blue">Получить консультацию</a>
+	 			</div>
+	 			<div class="step-mortgage">
+	 				<h5 class="step-mortgage__title">3 | ОФОРМЛЕНИЕ И ПОДАЧА ЗАЯВКИ</h5>
+	 				<p class="step-mortgage__text">После того, как вы определились с выбором квартиры от застройщика в ипотеку и программой, происходит подача 		заявки на ипотеку. Консультант поможет правильно заполнить все формы и составит список подходящих вам банков. 	Это 	займет около 30 минут. Банки рассмотрят вашу заявку в течение трех рабочих дней.</p>
+	 			</div>	 	
+	 		</div>
+		
+	 		<div class="steps-mortgage-column">
+	 			<div class="step-mortgage">
+	 				<h5 class="step-mortgage__title">4 | СОГЛАСОВАНИЕ ДОГОВОРА</h5>
+	 				<p class="step-mortgage__text">При положительном решении банка специалист по ипотеке назначает дату подписания кредитного договора. В 		назначенное время вы подписываете договор долевого участия в нашем офисе и кредитный договор в офисе банка.</p>
+	 			</div>
+	 			<div class="step-mortgage">
+	 				<h5 class="step-mortgage__title">5 | РЕГИСТРАЦИЯ ДОГОВОРА В РОСРЕЕСТРЕ</h5>
+	 				<p class="step-mortgage__text">Во время подписания договора менеджер записывает вас на ближайшую очередь государственной регистрации 	договора в 	Росреестре. Сдать документы на регистрацию после подписания кредитного договора обязательно в 	течение пяти 	календарных дней.</p>
+	 			</div>
+	 			<div class="step-mortgage">
+	 				<h5 class="step-mortgage__title">6 | ОКОНЧАТЕЛЬНЫЙ РАСЧЕТ</h5>
+	 				<p class="step-mortgage__text">После процедуры госрегистрации необходимо посетить банк для окончательного расчёта не позднее, чем за два 	дня. Не 	забудьте взять с собой экземпляр договора.</p>
+	 			</div>	 	
+	 		</div>
+	 	</div>
+		
+	</div>
+
+
+	</div>
+	<!-- *************************** БЛОК ПОДВАЛ***************************************- -->
+	<footer  class="page-footer-bg">
+		<div class="page-footer">
+			<div class="page-footer__block-logo-nav">
+
+				<div class="page-footer__block-logo">
+					<img src="img/logo-white.png" alt="НСК">
+					<p class="page-footer__subtitle">Более 99 лет строим<br>недвижимость в Новосибирске</p>
+				</div>
+
+				<nav class="page-footer__nav">
+					<ul>
+						<li ><a href="index.html">Главная</a></li>
+						<li class="active"><a href="">Квартиры</a></li>
+						<li><a href="#">Ипотека</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="about.html">Документы</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+
+			</div>
+			<div class="page-footer__block-form-contact">
+				<form class="page-footer__form" method="post" id="form-footer" action="">
+					<p>Получайте новости  и полезные статьи  от Новосибирской строительной компании</p>
+					<div class="page-footer__form-block-btn">
+						
+							<input type="email" name="user-mail" class="user-input user-input--form-footer color-footer required" placeholder="Ваш email">
+							<button type="submit" class="btn-yellow btn-yellow--form-footer">Подписаться на рассылку</button>
+						
+					</div>
+				</form>
+				<div class="page-footer__contact">
+					<p class="page-footer__contact-phone">+7 (383) <span> 274-23-43</span></p>
+					<div class="page-footer__contact-address">
+						<p>г. Новосибирск</p>
+						<p class="page-footer__address">
+							<span class="footer__address-title">Адрес объекта:</span>
+							<span class="page-footer__address-text">ул.&nbsp;Дунаевского,&nbsp;3<span>
+						</p>
+						<p class="page-footer__address">
+							<span class="page-footer__address-title">Офис продаж:</span>
+							<span class="page-footer__address-text">ул.&nbsp;Дунаевского,&nbsp;3<span>
+						</p>
+						
+					</div>
+				</div>
+				<p class="no-afert">Предложение не является офертой. Наличие квартир, помещений и актуальные цены уточняйте в отделах продаж.</p>
+			</div>
+			
+		</div>
+		
+	</footer>
+<!-- ************** БЛОК ПРИЛИПАЮЩАЯ НАВИГАЦИЯ ПРИ СКРОЛЛЕ ******************- -->
+	<div class="main-nav-scroll">
+		<header class="page-header-mobil">
+			<p class="page-header-mobil__phone">
+				+7 (383) <span> 274-23-43</span>				
+			</p>
+			<a href="index.html" class="page-header-mobil__logo"></a>		
+		</header>
+		<div class="main-nav-block main-nav--closed main-nav--nojs">
+			<button class="main-nav__toggle" type="button">Открыть меню</button>
+		
+			<nav class="main-nav">			
+				<div class="main-nav__wrapper">
+					<ul>
+						<li class="active"><a href="">Главная</a></li>
+						<li><a href="apartments.html">Квартиры</a></li>
+						<li><a href="#">Ипотека</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="about.html">Документы</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+
+<!-- ************** БЛОК МОДАЛЬНЫЕ ОКНА ******************- -->
+	<div class="modal_wrapper">  </div>
+	<div class="main-modal-bg">
+		<div class="main-modal">
+			<div class="main-modal__block-logo">
+				<img src="img/logo.jpg" alt="НСК">
+				<p class="main-modal__subtitle">Более 99 лет строим<br>недвижимость в Новосибирске</p>
+			</div>
+			<div class="main-modal__closed">&#10005;</div>
+			<div class="main-modal__btn-block">
+				<button type="button" class="main-modal__btn main-modal__btn--call">Заказать звонок</button>
+				<button type="button" class="main-modal__btn main-modal__btn--question">Задать вопрос</button>
+			</div>			
+		</div>
+		<div class="block-modal block-modal--call" >
+			<div class="block-header">
+				<p class="header-call">Заказать звонок</p>
+			</div>
+			<p class="block-modal__subtitle">
+				Оставьте ваш номер телефона, чтобы наш специалист мог с вами связаться
+			</p>
+			<form method="post">			
+				<input type="tel" name="user-phone" class="user-input user-input--block-modal required" placeholder="Ваш телефон">			
+				<button type="submit" class="btn-yellow btn-yellow--block-modal">Заказать звонок</button>
+				<input type="text" class="form_text_hide" name="text" value="Заказ обратного звонка">
+			</form>
+		</div>
+		<div class="block-modal block-modal--question">
+			<div class="block-header">
+				<p class="header-question">Задать вопрос</p>
+			</div>
+			<p class="block-modal__subtitle">
+				Вы можете задать любой вопрос о деятельности Новосибирской Строительной Компании
+			</p>
+			<form method="post">
+				<input type="text" name="user-name" class="user-input user-input--block-modal required" placeholder="Ваше имя">
+				<input type="tel" name="user-phone" class="user-input user-input--block-modal required" placeholder="Ваш телефон">
+				<textarea class="user-input user-input--block-modal" name="user-text" id="" cols="30" rows="6"></textarea>
+				<button type="submit" class="btn-yellow btn-yellow--block-modal">Отправить запрос</button>
+				<input type="text" class="form_text_hide" name="text" value="Задать вопрос">
+			</form>
+		</div>
+	</div>
+
+	<div class="modal more">
+	  <div class="frame_blue">
+	    <button class="modal_close" type="button">Закрыть</button>
+	    <h3 id="modal_txt">Заголовок</h3>
+	    <p><b>Оставьте Ваши контакты</b></p>
+	    <form method="post">    
+	      	<input type="text" class="user-input user-input--block-modal required" id="user_name_modal" name="user-name" placeholder="Имя" >
+	       	<input type="tel" class="user-input user-input--block-modal required" id="user_phone_modal" name="user-phone" placeholder="Телефон" >
+	        <input type="email" class="user-input user-input--block-modal" id="user_mail_modal" name="user-mail" placeholder="E-mail">
+	    	<button class="btn-yellow btn-yellow--form-modal" type="submit" id="btn_form_modal">Получить консультацию</button>    
+	      	<input type="text" class="form_text_hide" name="text">
+	    </form>
+	    <span>Менеджер перезвонит Вам<br> в течение 15 минут</span>
+	  </div>
+	</div>
+
+	<div style="display: none;">
+	    <div class="box-modal" id="exampleModal">
+	      <div class="frame_blue">        
+	        <div class="box-modal_close arcticmodal-close">x</div>
+	        <h3>Спасибо за заявку!</h3>
+	        <hr>
+	        <p>Мы свяжемся с Вами в ближайшее время.</p>
+	      </div>
+	    </div>
+	</div>
+
+</div>
+
+<script src="js/menu.js"> </script>	
+<script src="js/main-modal.js"> </script>	
+<script src="js/modal.js"> </script>
+<script src="js/post.js"> </script>
+<script src="js/calc.js"> </script>
+</body>
+</html>

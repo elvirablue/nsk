@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="305" height="279" viewBox="0 0 305 279">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #c8c8c8;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Прямоугольник_скругл._углы_528" data-name="Прямоугольник, скругл. углы 528" class="cls-1" d="M1418,1123H1151.5a3,3,0,0,1-3-3V1014.48l-25.97-27.426a2.076,2.076,0,0,1,0-2.826L1148.5,956.8V852a3,3,0,0,1,3-3H1418a3,3,0,0,1,3,3v268A3,3,0,0,1,1418,1123Z" transform="translate(-1118.5 -846.5)"/>
+</svg>

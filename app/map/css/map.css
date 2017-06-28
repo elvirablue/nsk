@@ -1,0 +1,350 @@
+		
+/**************** MAP *****************/
+.block-map__map-wrapper {
+	min-height: 33rem;
+	height: auto;
+	overflow: visible;
+}
+
+.maus_map {
+    width: 170px;
+    height: 150px;
+    position: absolute;
+    z-index: 200;
+    bottom: 30px;
+    right: calc(50% - 450px);
+    background-color: rgba(255,255,255,0.7);
+    text-align: center;
+    border: 1px solid #dfe2e3;
+}
+
+.maus_map img {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 36px;
+    height: auto;
+}
+
+#map_big {
+	height: 700px; 
+	position: relative;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#map_big .wrapper_maps {
+	height: auto;
+	z-index: 5;
+	top: 14px;
+	margin: 0 auto;
+	position: relative;
+	width: 1100px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+
+#map_big .drag {
+	width: 240px;
+	background: #23a9e1;
+	padding: 20px 12px 12px;
+	font: 800 18px/22px Foundry;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	border: 2px solid #fff;
+	border-radius: 6px;
+	box-shadow: 0 0 0 5px #23a9e1;
+	margin: auto;
+	position: absolute;
+	bottom: 37px;
+	left: 0;
+	right: -850px;
+	/*behavior: url(../PIE/PIE.php);*/
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#map_big .drag .icon {
+	width: 47px;
+	height: 37px;
+	margin: 0 auto 16px;
+	background: url(../images/mouse_drag.png) no-repeat;
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#map_big .map_wrapper {
+	height: 700px; /*ÑÐ°Ð¼ Ð±Ð»Ð¾Ðº ÐºÐ°Ñ€Ñ‚Ð¸ Ð¸ ÐµÐ³Ð¾ Ð²Ñ‹ÑÐ¾Ñ‚Ð°*/
+	margin: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	overflow: hidden;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#map_big .map {
+	width: 3646px;
+	height: 1800px;
+	background: url(../images/map.jpg) no-repeat;
+	margin: auto;
+	position: absolute;
+	left: -1200px;
+	
+	top: -500px;
+	cursor: url(../images/grab.png) 8 8, move;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#map_big .map .mark {
+	width: 32px;
+	height: 47px;
+	background: url(../images/mark.png) no-repeat;
+	position: absolute;
+	overflow: visible;
+	cursor: pointer;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+
+
+#map_big .map .balloon {
+	display: none;
+	width: 210px;
+	height: 150px;
+	background: #ff7606; 
+	border-radius: 6px;
+	font: ;
+	
+	color: #fff;
+	padding: 14px;
+	position: absolute;
+	left: -92px;
+	z-index: 10;
+	/*behavior: url(../PIE/PIE.php);*/
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#map_big .map .balloon:before {
+	content: '';
+	width: 34px;
+	height: 18px;
+	margin: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#map_big .map .balloon.top {
+	top: -175px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#map_big .map .balloon.top:before {
+	background: url(../images/bottom_corner.png) no-repeat;
+	bottom: -16px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#map_big .map .balloon.bottom {
+	bottom: -175px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#map_big .map .balloon.bottom:before {
+	background: url(../images/top_corner.png) no-repeat;
+	top: -16px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#map_big .map .balloon b {
+	display: block;
+	
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#map_big .map .balloon .city {
+	display: block;
+	font-size: 17px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#map_big .map .balloon .button {
+	margin: 14px auto 0;
+	background: #df7421;
+	border-color: #d87221;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
+
+#map_big .map .mark.mark--shop {
+	background: url(../images/map-shop.svg) no-repeat;
+}
+
+#map_big .map .mark.mark--beby {
+	background: url(../images/map-beby.svg) no-repeat;
+}
+
+#map_big .map .mark.mark--edu {
+	background: url(../images/map-edu.svg) no-repeat;
+}
+
+#map_big .map .mark.mark--kino {
+	background: url(../images/map-kino.svg) no-repeat;
+}
+
+#map_big .map .mark.mark--sport {
+	background: url(../images/map-sport.svg) no-repeat;
+}
+
+#map_big .map .mark.mark--med {
+	background: url(../images/map-med.svg) no-repeat;
+}
+
+#map_big .map .mark.mark--star {
+	background: url(../images/map-star.svg) no-repeat;
+}
+
+#map_big .map .mark.bahetle {
+	left: 1330px;
+	top: 1600px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#map_big .map .mark.metro {
+	left: 1920px;
+	top: 130px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+
+#map_big .map .mark.progress {
+	left: 1810px;
+	top: 620px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#map_big .map .mark.energy {
+	left: 1770px;
+	top: 400px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#map_big .map .mark.rojal-park {
+	left: 1910px;
+	top: 1280px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#map_big .map .mark.kalina {
+	left: 2000px;
+	top: 880px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#map_big .map .mark.rojal-park-sinema {
+	left: 1870px;
+	top: 1260px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#map_big .map .mark.kalina-sinema {
+	left: 1970px;
+	top: 890px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#map_big .map .mark.europe {
+	left: 1920px;
+	top: 670px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#map_big .map .mark.two {
+	left: 2220px;
+	top: 850px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#map_big .map .mark.edu-9 {
+	left: 1850px;
+	top: 1110px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#map_big .map .mark.euro-med {
+	left: 1900px;
+	top: 660px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#map_big .map .mark.zdravica {
+	left: 2210px;
+	top: 880px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
